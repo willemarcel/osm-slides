@@ -1,0 +1,397 @@
+<!--
+Google IO 2012/2013 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+
+  <slide class="title-slide segue nobackground">
+    <aside class="gdbar"><img src="images/osm-128.png"></aside>
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </hgroup>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>Quem sou?</h2>
+    </hgroup>
+    <article>
+      <ul class="build">
+        <li>No Software Livre desde 2005</li>
+        <li>No OpenStreetMap desde 2010</li>
+        <li>Python / Django / GeoDjango</li>
+        <li>Desenvolvedor web na UFRB</li>
+      </ul>
+    </article>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>Onde colaboro?</h2>
+    </hgroup>
+    <article>
+      <iframe data-src="http://yosmhm.neis-one.org/?wille"></iframe>
+    </article>
+    <footer class="source">http://yosmhm.neis-one.org</footer>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>O que é o OpenStreetMap?</h2>
+    </hgroup>
+    <article>
+      <p>Um projeto comunitário para cartografar o mundo, a partir da colaboração dos diversos usuários.</p>
+      <img src="images/osm/osm-wiki.png" class="reflect" alt="Description" title="Description" width="100%">
+      <p><center><a href="http://osm.org"><h2>http://osm.org</h2></a><center></p>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <hgroup class="auto-fadein">
+      <h2>Por que criar um mapa livre?</h2>
+      <h3>Por que não usar algum dos serviços de mapas comerciais existentes?</h3>
+    </hgroup>
+  </slide>
+  
+  <slide class="fill nobackground" style="background-image: url(images/osm/c.jpg)">
+    <hgroup>
+      <h2 class="white">Restrições de Copyright</h2>
+    </hgroup>
+    <footer class="source white">CC BY: https://secure.flickr.com/photos/horiavarlan/4273272605</footer>
+  </slide>
+  
+    <slide>
+    <hgroup>
+      <h2>Restrições de Copyright</h2>
+      <h3>Licença do Google Maps</h3>
+    </hgroup>
+    <article >
+      <p>"Para usuários individuais, o Google Maps, incluindo os resultados de pesquisas locais, os mapas e as imagens fotográficas, estão disponíveis <b>apenas para uso pessoal, não comercial</b>. Para usuários empresariais, o Google Maps incluindo os resultados de pesquisas locais, os mapas e as imagens fotográficas, estão disponíveis apenas para <b>uso interno e não pode ser redistribuído comercialmente</b>."</p>
+    </article>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>Desvantagens de mapas providos por empresas</h2>
+    </hgroup>
+    <article>
+      <ul class="build">
+        <li>Faltam mapas de cidades pequenas ou áreas economicamente pouco desenvolvidas.</li>
+        <li>O foco do mapa geralmente é em informação para carros.</li>
+        <li>Demora em ser atualizado.</li>
+        <li>Não podemos editar o mapa.</li>
+        <li>Quando se pode editar, suas contribuições viram propriedade da empresa.</li>
+      </ul>
+    </article>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>Problemas políticos...</h2>
+    </hgroup>
+    <article>
+      <img src="images/osm/gaza.png" class="reflect" alt="Description" title="Description" width="100%">   
+    </article>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>Comunidade OpenStreetMap</h2>
+    </hgroup>
+    <article>
+      <p>Um projeto global. Mais de 1 milhão e meio de colaboradores cadastrados.</p>
+      <img src="images/osm/globalmap.jpg" class="reflect" alt="Description" title="Description" width="70%">
+    </article>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>Crescimento da comunidade</h2>
+    </hgroup>
+    <article>
+      <img src="images/osm/userstats.png" class="reflect" alt="Description" title="Description" width="70%">   
+    </article>
+    <footer class="source">http://wiki.openstreetmap.org/wiki/Stats</footer>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>Crescimento dos dados</h2>
+    </hgroup>
+    <article>
+      <img src="images/osm/osmdbstats.png" class="reflect" alt="Description" title="Description" width="70%">
+    </article>
+    <footer class="source">http://wiki.openstreetmap.org/wiki/Stats</footer>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>Edições ao vivo!</h2>
+    </hgroup>
+    <article>
+      <iframe data-src="http://live.openstreetmap.fr/"></iframe>
+    </article>
+    <footer class="source">http://live.openstreetmap.fr/</footer>
+  </slide>
+  
+  <slide class="segue dark nobackground">
+    <hgroup class="auto-fadein">
+      <h2>O OSM vai além de vias e POIs</h2>
+      <h3>Pode-se mapear praticamente tudo o que vemos</h3>
+    </hgroup>
+  </slide> 
+  
+  <slide>
+    <hgroup>
+      <h2>Dados de excelente qualidade!</h2>
+    </hgroup>
+    <article>
+      <img src="images/osm/berlin.png" class="reflect" alt="Description" title="Description" width="100%">
+    </article>
+    <footer class="source">Berlim, Alemanha</footer>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>Destaque na Wired</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/osm/wired.png" alt="Description" title="Description">
+      <footer class="source">http://www.wired.com/2014/02/sochi-maps/</footer>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <hgroup class="auto-fadein">
+      <h2>O OSM não é apenas um mapa,</h2>
+      <h3>mas sim um banco de dados de informações geográficas</h3>
+    </hgroup>
+  </slide> 
+  
+  <slide>
+    <hgroup>
+      <h2>Renderização Padrão</h2>
+    </hgroup>
+    <article>
+      <img src="images/osm/padrao.png" class="reflect" alt="Description" title="Description" width="100%">
+    </article>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>Cycle Map</h2>
+    </hgroup>
+    <article>
+      <img src="images/osm/cyclemap.png" class="reflect" alt="Description" title="Description" width="100%">
+    </article>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>Transporte Público</h2>
+    </hgroup>
+    <article>
+      <img src="images/osm/transport.png" class="reflect" alt="Description" title="Description" width="100%">
+    </article>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>Renderização 3D: f4map.com</h2>
+    </hgroup>
+    <article>
+      <img src="images/osm/f4map-joinville.png" class="reflect" alt="Description" title="Description" width="100%">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Licença ODBL: Open Database License</h2>
+    </hgroup>
+    <article>
+      <img src="images/osm/odbl.png" class="reflect" alt="Description" title="Description" width="65%">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Ecossistemas de Softwares</h2>
+    </hgroup>
+    <article>
+      <img src="images/osm/softwares.jpg" class="reflect" alt="Description" title="Description" width="70%">
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <hgroup class="auto-fadein">
+      <h2>Casos de uso</h2>
+    </hgroup>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>Haiti</h2>
+      <h3>Utilização pelas equipes de resgate após o terremoto de janeiro de 2010.</h3>
+    </hgroup>
+    <article>
+      <img src="images/osm/haiti.png" class="reflect" alt="Description" title="Description" width="100%">
+    </article>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>Tufão Haiyan (2013), Filipinas</h2>
+    </hgroup>
+    <article>
+      <img src="images/osm/haiyan.png" class="reflect" alt="Description" title="Description" width="100%">
+    </article>
+    <footer class="source">http://resultmaps.neis-one.org/osm-typhoon-haiyan-2013/</footer>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>HOT - Humanitarian OpenStreetMap Team</h2>
+    </hgroup>
+    <article>
+      <img src="images/osm/hot.png" class="reflect" alt="Description" title="Description" width="100%">
+    </article>
+    <footer class="source">http://hot.openstreetmap.org</footer>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Wheelmap.org</h2>
+      <h3>Informações sobre acessibilidade baseadas no OSM</h3>
+    </hgroup>
+    <article>
+      <img src="images/osm/wheelmap.png" class="reflect" alt="Description" title="Description" width="100%">
+    </article>
+    <footer class="source">http://wheelmap.org</footer>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>OSRM – Open Source Route Machine</h2>
+      <h3>http://osrm.at</h3>
+    </hgroup>
+    <article>
+      <img src="images/osm/osrm.png" class="reflect" alt="Description" title="Description" width="100%">
+    </article>
+  </slide>
+  
+  <slide class="segue dark nobackground">
+    <hgroup class="auto-fadein">
+      <h2>Técnicas de Mapeamento</h2>
+    </hgroup>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>Técnicas de Mapeamento</h2>
+    </hgroup>
+    <article>
+      <ul class="build">
+        <li>Imagens de satélite</li>
+        <li>Nomes de ruas a partir do IBGE</li>
+        <li>Trilhas de GPS</li>
+        <li>Mapeamento em campo</li>
+        <ul>
+          <li>Fotos georreferenciadas</li>
+          <li>Aplicativos de celular</li>
+          <li>Field Papers</li>
+        </ul>
+      </ul>
+    </article>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>OSMTracker</h2>
+    </hgroup>
+    <article>
+      <img src="images/osm/osmtracker.png" class="reflect" alt="Description" title="Description" width="100%">
+    </article>
+  </slide>
+  
+  <slide>
+    <article>
+      <img src="images/osm/fieldpapers.jpg" class="reflect" alt="Description" title="Description" width="85%">
+    </article>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>OsmAnd</h2>
+    </hgroup>
+    <article>
+      <img src="images/osm/osmand.png" class="reflect" alt="Description" title="Description" width="95%">
+    </article>
+    <footer class="source">http://osmand.net</footer>
+  </slide>
+  tms:http://{switch:a,b,c}.tiles.mapbox.com/v3/tmpsantos.hgda0m6h/{zoom}/{x}/{y}.png
+  
+
+  
+  <slide>
+    <hgroup>
+      <h2>Como colaborar</h2>
+    </hgroup>
+    <article>
+      <ul class="build">
+        <li>Edite o mapa pelo site</li>
+        <li>Envie trilhas de GPS</li>
+        <li>Adicione notas ao mapa</li>
+        <li>Solicite dados públicos</li>
+        <li>Nunca copie dados de outros mapas</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="thank-you-slide segue nobackground">
+    <aside class="gdbar right"><img src="images/osm-128.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <h2>Obrigado!</h2>
+      <p><a href="mailto:wille@wille.blog.br" class="white">wille@wille.blog.br</a></p>
+      <p>diaspora <a href="https://diasp.org/u/wille" class="white">diasp.org/u/wille</a></p>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>

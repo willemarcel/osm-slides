@@ -305,7 +305,7 @@ slides > slide:not(.nobackground):before {
   position: absolute;
   bottom: 20px;
   left: 60px;
-  background: url(../../images/google_developers_icon_128.png) no-repeat 0 50%;
+  background: url(../../images/osm-128.png) no-repeat 0 50%;
   -webkit-background-size: 30px 30px;
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;
@@ -448,7 +448,7 @@ b {
 
 /* line 266, ../scss/default.scss */
 a {
-  color: #2a7cdf;
+  color: #84d461;
   text-decoration: none;
   border-bottom: 1px solid rgba(42, 124, 223, 0.5);
 }
@@ -1237,7 +1237,7 @@ article.smaller q:before, article.smaller q:after {
 
 /* line 826, ../scss/default.scss */
 .thank-you-slide {
-  background: #4387fd !important;
+  background: #84d461 !important;
   color: white;
 }
 /* line 830, ../scss/default.scss */
